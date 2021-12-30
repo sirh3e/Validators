@@ -2,7 +2,7 @@
 
 namespace Sirh3e.Validators.Core;
 
-public class ValidatorRuleFailure : IValidateRuleFailed
+public class ValidatorRuleFailure : IValidateRuleFailed //ToDo rename it to Failed or Failure
 {
     public ValidatorRuleFailure(string message)
     {
