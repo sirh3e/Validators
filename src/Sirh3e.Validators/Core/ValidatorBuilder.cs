@@ -3,7 +3,7 @@ using Sirh3e.Validators.Core.Interfaces;
 
 namespace Sirh3e.Validators.Core;
 
-public class ValidatorBuilder<TEntity>
+public class ValidatorBuilder<TEntity> : IValidatorBuilder<TEntity>
 {
     protected readonly List<Lazy<Func<TEntity, IValidateRuleResult>>> ValidateRuleResults = new();
 
